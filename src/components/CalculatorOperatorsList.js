@@ -1,16 +1,10 @@
-import CalculatorOperator from "./CalculatorOperator";
+import CalculatorButtonsList from "./CalculatorButtonsList";
 
 function CalculatorOperatorsList ({onSelected}) {
     const signs = ["+", "-", "/", "*", "=", "AC"];
-    const currentOperator = undefined;
-    return <div className="operators"> 
-            {
-                signs.map((sign) => <CalculatorOperator operator={sign} onSelected={() => {
-                    // currentOperator = sign;
-                    onSelected(sign)
-                }} />)
-            }
-            </div>
+    return (
+        <CalculatorButtonsList onSelected={onSelected} signs={signs} className='operators' />
+    )
 }
 
 export default CalculatorOperatorsList;

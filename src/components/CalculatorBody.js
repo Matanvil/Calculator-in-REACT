@@ -1,11 +1,11 @@
 import CalculatorOperatorsList from "./CalculatorOperatorsList";
-
+import CalculatorNumbersList from "./CalculatorNumbersList";
 
 function CalculatorBody() {
   return (
     <div className="calculator-body">
       <CalculatorOperatorsList onSelected={(operator) => alert("operator selected " + operator) }/> 
-      <div className="digits"></div>
+      <CalculatorNumbersList onSelected={(digit) => alert("digit selected " + digit) }/> 
     </div>
   );
 }
