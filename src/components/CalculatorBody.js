@@ -4,12 +4,12 @@ import CalculatorNumbersList from "./CalculatorNumbersList";
 import CalculatorDisplay from "./CalculatorDisplay";
 
 function CalculatorBody() {
-  const [value, setValue] = useState(5)
   return (
     <div className="calculator-body">
-      <CalculatorOperatorsList onSelected={(operator) => setValue(operator) }/> 
-      <CalculatorNumbersList onSelected={(digit) => setValue(digit) }/> 
-      <CalculatorDisplay value={} /> 
+      {/* <CalculatorOperatorsList onSelected={(operator) => alert(operator) }/>  */}
+      {/* <CalculatorNumbersList onSelected={(digit) => alert(digit) }/>  */}
+      <CalculatorOperatorsList /> 
+      <CalculatorNumbersList  /> 
     </div>
   );
 }
