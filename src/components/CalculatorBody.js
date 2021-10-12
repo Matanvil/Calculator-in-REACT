@@ -8,8 +8,8 @@ function CalculatorBody() {
     <div className="calculator-body">
       {/* <CalculatorOperatorsList onSelected={(operator) => alert(operator) }/>  */}
       {/* <CalculatorNumbersList onSelected={(digit) => alert(digit) }/>  */}
-      <CalculatorOperatorsList /> 
-      <CalculatorNumbersList  /> 
+      <CalculatorOperatorsList onSelected={e => alert(e)} />
+      <CalculatorNumbersList onSelected={e => alert(e)} />
     </div>
   );
 }
