@@ -1,17 +1,14 @@
-import { useState } from "react";
 import CalculatorOperatorsList from "./CalculatorOperatorsList";
 import CalculatorNumbersList from "./CalculatorNumbersList";
-import CalculatorDisplay from "./CalculatorDisplay";
+import css from './CalculatorBody.module.css';
 
-function CalculatorBody() {
-  return (
-    <div className="calculator-body">
-      {/* <CalculatorOperatorsList onSelected={(operator) => alert(operator) }/>  */}
-      {/* <CalculatorNumbersList onSelected={(digit) => alert(digit) }/>  */}
-      <CalculatorOperatorsList /> 
-      <CalculatorNumbersList  /> 
-    </div>
-  );
+function CalculatorBody({onOperatorSelected, onNumberSelected}){
+    return (
+        <div className={css.CalculatorBody}>
+            <CalculatorOperatorsList onSelected={onOperatorSelected}/>
+            <CalculatorNumbersList onSelected={onNumberSelected}/>
+        </div>
+    );
 }
 
 export default CalculatorBody;

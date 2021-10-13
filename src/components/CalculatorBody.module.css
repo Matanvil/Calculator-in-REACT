@@ -1,0 +1,11 @@
+.CalculatorBody {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.CalculatorBody button {
+    font-size: 20px;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+}

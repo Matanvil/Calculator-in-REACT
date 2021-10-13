@@ -1,18 +1,11 @@
-import { useState } from "react";
+import './CalculatorDisplay.css';
 
-
-function CalculatorDisplay() {
-  const [value, setValue] = useState(5)
-
-  return (
-    <label>
-      <input className="display"
-      type="text" 
-      value={value} 
-      onChange = {e => setValue(e.target.value)} />
-    </label> 
-  );
+function CalculatorDisplay({value = ""}){
+    return (
+        <label>
+            <input className="display" type="text" value={value} readOnly/>
+        </label>
+    );
 }
 
 export default CalculatorDisplay;
-

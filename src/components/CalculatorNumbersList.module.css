@@ -1,0 +1,10 @@
+.digits {
+    width: 180px;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.digits button {
+    background-color: #ccc;
+}
